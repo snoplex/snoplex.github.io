@@ -173,14 +173,14 @@ margin-left: -110px;
     justify-content: center;
     /* background: white; */
     /* border-radius: 50%; */
-    margin: 20px 20px;
+    margin: 22px 22px;
     color: white;
     text-decoration: none;
     font-size: 30px;
 }
 
 .sosyal-medya a:hover {
-    transform: scale(2.5);
+    transform: scale(1.5);
     transition: .3s;
 }
 
@@ -326,5 +326,3 @@ h1.skill-text {
         content: 'Gamer';
     }
 }
-
-    /* Snoplex */
