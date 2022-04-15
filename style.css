@@ -32,6 +32,30 @@ p {
     user-select: none;
 }
 
+.text {
+    position: relative;
+    font-size: 22px;
+}
+
+.copyright {
+overflow: hidden;
+position: fixed;
+top: 52%;
+left: 50%;
+/* margin-top: 25px; */
+margin-left: -110px;
+}
+
+.source {
+    overflow: hidden;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -110px;
+    color: white;
+}
+
 .section {
     text-align: center;
     position: absolute;
@@ -54,8 +78,8 @@ p {
 }
 
 .section:nth-child(1) {
-    background-color: #fff;
-    color: #000;
+    background-color: #5a189a;
+    color: white;
     top: 0;
     z-index: 1;
 }
@@ -66,7 +90,7 @@ p {
 
 .section:nth-child(2) {
     box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-    background-color: #304ceb;
+    background-color: #240046;
     color: #fff;
     top: 100vh;
     z-index: 2;
@@ -78,7 +102,7 @@ p {
 
 .section:nth-child(3) {
     box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-    background-color: #c20a47;
+    background-color: #3c096c;
     color: #fff;
     top: 200vh;
     z-index: 3;
@@ -90,7 +114,7 @@ p {
 
 .section:nth-child(4) {
     box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-    background-color: #d6922c;
+    background-color: #5a189a;
     color: #fff;
     top: 300vh;
     z-index: 4;
@@ -102,7 +126,7 @@ p {
 
 .section:nth-child(5) {
     box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
-    background-color: #c20a85;
+    background-color: #7b2cbf;
     color: #fff;
     top: 400vh;
     z-index: 5;
@@ -132,9 +156,9 @@ p {
 }
 
 .image {
-    width: 334px;
-    height: 250px;
-    border-radius: 5%;
+    width: 250px;
+    height: 169px;
+    border-radius: 10%;
 }
 
 .sosyal-medya {
@@ -150,12 +174,39 @@ p {
     /* background: white; */
     /* border-radius: 50%; */
     margin: 20px 20px;
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 30px;
 }
 
 .sosyal-medya a:hover {
+    transform: scale(2.5);
+    transition: .3s;
+}
+
+h1.skill-text {
+    font-size: 50px;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills a {
+    width: 25px;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: white; */
+    /* border-radius: 50%; */
+    margin: 50px 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 70px;
+}
+
+.skills a:hover {
     transform: scale(1.5);
     transition: .3s;
 }
@@ -252,14 +303,14 @@ p {
 .ima {
     font-size: 20px;
     position: relative;
-    color: #000;
+    color: white;
     bottom: 5px;
 }
 
 .ima::after {
     content: ' ';
     padding-left: 5px;
-    color: #000;
+    color:white;
     /* background: #000; */
     animation: textrotate 5s linear infinite;
 }
