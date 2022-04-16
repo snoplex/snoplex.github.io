@@ -244,7 +244,7 @@ margin-left: -110px;
 }
 
 .sosyal-medya a:hover {
-    transform: scale(1.4);
+    transform: scale(1.5);
     transition: .3s;
 }
 
@@ -390,6 +390,9 @@ h1.skill-text {
         content: 'Gamer';
     }
 }
+
+
+
 
 .background {
     display: flex;
@@ -539,6 +542,15 @@ h1.skill-text {
         font-size: 9pt;
         top: 0.8%;
         left: 45%;
+    }
+
+    .text {
+        font-size: 10pt;
+        position: relative;
+    }
+
+    .fixed {
+        width: 100vw;
     }
   }
   
