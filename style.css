@@ -549,7 +549,15 @@ h1.skill-text {
         position: relative;
     }
 
-    .educationtext {
+    #abouttext {
+        width: 100vw;
+    }
+
+    #educationtext {
+        width: 100vw;
+    }
+
+    #projectstext {
         width: 100vw;
     }
   }
