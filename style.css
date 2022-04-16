@@ -516,8 +516,9 @@ h1.skill-text {
     }
 
     .hhome {
-        font-size: 12pt;
-        top: auto;
+        font-size: 9pt;
+        top: 0.8%;
+        left: 5%;
     }
 
     .habout {
