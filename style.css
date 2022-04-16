@@ -244,7 +244,7 @@ margin-left: -110px;
 }
 
 .sosyal-medya a:hover {
-    transform: scale(1.5);
+    transform: scale(1.4);
     transition: .3s;
 }
 
@@ -391,6 +391,7 @@ h1.skill-text {
     }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -554,3 +555,6 @@ h1.skill-text {
       padding: 0;
     }
   }
+=======
+    /* Snoplex#5657 */
+>>>>>>> a21f0efff45e32b7e30bd55fb11cf45e759bdd6a
