@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Sintony';
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 * {
     box-sizing: border-box;
 }
@@ -32,9 +33,18 @@ p {
     user-select: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .text {
     position: relative;
     font-size: 22px;
+    color: white;
+}
+
+.repos-hover:hover {
+    color: #ea1d6f;
 }
 
 .copyright {
@@ -46,7 +56,7 @@ left: 50%;
 margin-left: -110px;
 }
 
-.source {
+/* .source {
     overflow: hidden;
     position: fixed;
     top: 80%;
@@ -54,7 +64,7 @@ margin-left: -110px;
     margin-top: 25px;
     margin-left: -110px;
     color: white;
-}
+} */
 
 .section {
     text-align: center;
@@ -149,16 +159,70 @@ margin-left: -110px;
 }
 
 .oop {
-    position: relative;
-    z-index: auto;
-    height: 10px;
-    background: linear-gradient(141deg, #48ded4 0%, #a026bf 51%, #e82c75 75%);
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: rgb(40, 40, 40);
+    /* background: linear-gradient(141deg, #48ded4 0%, #a026bf 51%, #e82c75 75%); */
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.31));
+}
+
+.hhome {
+    z-index: 10000;
+    position: fixed;
+    font-size: 20px;
+    top: -10px;
+    left: 1%;
+    color: white;
+}
+
+.habout {
+    z-index: 10000;
+    position: fixed;
+    font-size: 20px;
+    top: -10px;
+    left: 70%;
+    /* margin-right: 15em; */
+    color: white;
+}
+
+.heducation {
+    z-index: 10000;
+    position: fixed;
+    font-size: 20px;
+    top: -10px;
+    left: 65%;
+    margin-left: 8em;
+    color: white;
+}
+
+.hskills {
+    z-index: 10000;
+    position: fixed;
+    font-size: 20px;
+    top: -10px;
+    left: 70%;
+    margin-left: 11em;
+    color: white;
+}
+
+.hprojects {
+    z-index: 10000;
+    position: fixed;
+    font-size: 20px;
+    top: -10px;
+    left: 75%;
+    margin-left: 11.5em;
+    color: white;
 }
 
 .image {
     width: 250px;
-    height: 169px;
-    border-radius: 10%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .sosyal-medya {
@@ -327,4 +391,166 @@ h1.skill-text {
     }
 }
 
-    /* Snoplex#5657 */
+
+
+
+.background {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  
+  .container {
+    flex: 0 1 400px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    overflow: hidden;
+    background: #3e3e3e;
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .app-form-group {
+    margin-bottom: 40px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #ea1d6f;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: #b9134f;
+  }
+  
+  .dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+  }
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+
+    .scrolltop-wrap {
+        position: absolute;
+        left: 45%;
+    }
+
+    .hhome {
+        font-size: 12pt;
+        top: auto;
+    }
+
+    .habout {
+        font-size: 9pt;
+        top: 0.8%;
+        left: 37.5%;
+    }
+    
+    .heducation {
+        font-size: 9pt;
+        top: 0.8%;
+        left: 25%;
+    }
+
+    .hskills {
+        font-size: 9pt;
+        top: 0.8%;
+        left: 35%;
+    }
+
+    .hprojects {
+        font-size: 9pt;
+        top: 0.8%;
+        left: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
